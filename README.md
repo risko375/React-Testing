@@ -1,25 +1,16 @@
-# ReduxSimpleStarter
+Using TDD to create a simple app which logs messsages to the screen typed in by user
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+First set up failing tests and move towards all passing (red to green) as app code develops
 
-###Getting Started###
+Uses Mocha to load tests, run them one by one, clean up after each
+Uses Chai for helpers for asserting certain properties about the test subject 
 
-There are two methods for getting started with this repo.
+Test_helper.js created to:
+- Set up testing environment to run like a browser in command line
+- build 'renderComponent' helper that should render a given react class
+- build helper for simulating events
+- set up chai-jquery
 
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Test specs written for each component,action creator and reducer
 
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-	> npm install
-	> npm start
-```
